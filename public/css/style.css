@@ -38,10 +38,21 @@ h1{
 .subforum-description *{
     margin-block: 0;
 }
-.subforum-description img{
-    max-width: 100%; 
-    height: auto;
+.zoomable{
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s;
 }
+.zoomable:hover {
+    transform: scale(2);
+ }
+
+ .subforum-stats span{
+    font-weight: bold;
+    margin-right: 15px;
+    font-size: 14px;
+ }
+
 .subforum-row{
     display:grid;
     grid-template-columns: 7% 60% 13% 20%;
@@ -60,6 +71,7 @@ h1{
 .subforum-icon i{
     margin-right: 10px;
     font-size: 22px;
+    cursor:pointer;
 }
 .subforum-devider{
     display: none;

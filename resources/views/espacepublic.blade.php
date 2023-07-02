@@ -25,10 +25,11 @@
                 <div class="subforum-description subforum-column ">
                     <h1><a href="">titre de la connaissance: </a></h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quam odio necessitatibus quas, optio accusantium adipisci in ratione eos voluptatibus modi numquam sit! Error, blanditiis explicabo commodi repellat quaerat ad!</p>
-                    <img src="" alt="image de la connaissance">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png" alt="image de la connaissance" class="zoomable">
                 </div>
                 <div class="subforum-stats subforum-column center">
-                    <span>Nombre de vues | nombre de likes</span>
+                    <span id="view-count">12 </span>  vues
+                    <span id="like-count"> 14 </span> likes
                 </div>
                 <div class="subforum-info subforum-column ">
                     <b><a href=""> Posté </a></b> par <a href="">Nom de l'etudiant</a>
