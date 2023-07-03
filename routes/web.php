@@ -20,3 +20,15 @@ Route::get('/', function () {
 Route::get('/espacepublic', function () {
     return view('espacepublic');
 });
+Route::get('/espacepublicVideo', function () {
+    return view('espacepublicVideo');
+});
+Route::get('/espacepublicLien', function () {
+    return view('espacepublicLien');
+});
+Route::get('/espacepublicResume', function () {
+    return view('espacepublicResume');
+});
+Route::get('/Acceuil', function () {
+    return view('Acceuil');
+});

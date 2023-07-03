@@ -17,13 +17,13 @@
                 <ul class="nav-list">
                     <span class="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
                     <li class="nav-item">
-                        <a href="#">Home</a>
+                        <a href="#">Acceuil</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">forum</a>
+                        <a href="#">inscription</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">detail</a>
+                        <a href="#">Forum</a>
                     </li>
                 </ul>
             </nav>
