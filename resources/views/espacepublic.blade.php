@@ -31,7 +31,7 @@
             </div>
             <div class="subforum-row">
                 <div class="subforum-icon subforum-column center">
-                    <i class="far fa-thumbs-up"></i>
+                    <i class="like-icon far fa-thumbs-up"></i>
                     <br>
                     <i class="far fa-thumbs-down"></i>
                 </div>
@@ -45,7 +45,7 @@
                 </div>
                 <div class="subforum-stats subforum-column center">
                     <span id="view-count">12 </span>  vues
-                    <span id="like-count"> 0 </span> likes
+                    <span class="like-count" data-clicked="false"> 1 </span> likes
                 </div>
                 <div class="subforum-info subforum-column ">
                     <b><a href=""> Posté </a></b> par <a href="">Nom de l'etudiant</a>
@@ -60,7 +60,7 @@
             </div>
             <div class="subforum-row">
                 <div class="subforum-icon subforum-column center">
-                    <i class="far fa-thumbs-up"></i>
+                    <i class="like-icon far fa-thumbs-up" ></i>
                     <br>
                     <i class="far fa-thumbs-down"></i>
                 </div>
@@ -74,7 +74,7 @@
                 </div>
                 <div class="subforum-stats subforum-column center">
                     <span id="view-count">12 </span>  vues
-                    <span id="like-count"> 14 </span> likes
+                    <span class="like-count" data-clicked="false"> 2 </span> likes
                 </div>
                 <div class="subforum-info subforum-column ">
                     <b><a href=""> Posté </a></b> par <a href="">Nom de l'etudiant</a>
@@ -84,92 +84,12 @@
             </div>
 
 
-            <div class="subforum-title">
-                <h1>Nom de la matiere</h1>
-            </div>
-            <div class="subforum-row">
-                <div class="subforum-icon subforum-column center">
-                    <i class="far fa-thumbs-up"></i>
-                    <br>
-                    <i class="far fa-thumbs-down"></i>
-                </div>
-                <div class="subforum-description subforum-column ">
-                    <h1><a href="">titre de la connaissance: </a></h1>
-                    
-                    <div >
-                        <img src="https://static.javatpoint.com/tutorial/deep-learning/images/types-of-deep-learning-networks.png" alt="image de la connaissance" class="zoomable" onclick="agrandir(event)">
-                    </div>
-                    
-                </div>
-                <div class="subforum-stats subforum-column center">
-                    <span id="view-count">12 </span>  vues
-                    <span id="like-count"> 14 </span> likes
-                </div>
-                <div class="subforum-info subforum-column ">
-                    <b><a href=""> Posté </a></b> par <a href="">Nom de l'etudiant</a>
-                    <br>
-                    le<small>date  et l'heure a laquelle il a posté</small>
-                </div>
-            </div>
+           
+
+            
 
 
-            <div class="subforum-title">
-                <h1>Nom de la matiere</h1>
-            </div>
-            <div class="subforum-row">
-                <div class="subforum-icon subforum-column center">
-                    <i class="far fa-thumbs-up"></i>
-                    <br>
-                    <i class="far fa-thumbs-down"></i>
-                </div>
-                <div class="subforum-description subforum-column ">
-                    <h1><a href="">titre de la connaissance: </a></h1>
-                    
-                    <div >
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG0Iw1t2Uw3YZw-KLCPZbKOUMsvE_v_clbc40uQ_dzFLh3N159E_Y4GbMF8pCfO70MFIk&usqp=CAU" alt="image de la connaissance" class="zoomable" onclick="agrandir(event)">
-                    </div>
-                    
-                </div>
-                <div class="subforum-stats subforum-column center">
-                    <span id="view-count">12 </span>  vues
-                    <span id="like-count"> 14 </span> likes
-                </div>
-                <div class="subforum-info subforum-column ">
-                    <b><a href=""> Posté </a></b> par <a href="">Nom de l'etudiant</a>
-                    <br>
-                    le<small>date  et l'heure a laquelle il a posté</small>
-                </div>
-            </div>
-
-
-
-            <div class="subforum-title">
-                <h1>Nom de la matiere</h1>
-            </div>
-            <div class="subforum-row">
-                <div class="subforum-icon subforum-column center">
-                    <i class="far fa-thumbs-up"></i>
-                    <br>
-                    <i class="far fa-thumbs-down"></i>
-                </div>
-                <div class="subforum-description subforum-column ">
-                    <h1><a href="">titre de la connaissance: </a></h1>
-                    
-                    <div >
-                        <img src="https://static.javatpoint.com/tutorial/deep-learning/images/deep-learning-algorithms2.png" alt="image de la connaissance" class="zoomable"onclick="agrandir(event)">
-                    </div>
-                    
-                </div>
-                <div class="subforum-stats subforum-column center">
-                    <span id="view-count">12 </span>  vues
-                    <span id="like-count"> 14 </span> likes
-                </div>
-                <div class="subforum-info subforum-column ">
-                    <b><a href=""> Posté </a></b> par <a href="">Nom de l'etudiant</a>
-                    <br>
-                    le<small>date  et l'heure a laquelle il a posté</small>
-                </div>
-            </div>
+           
 
 
             
