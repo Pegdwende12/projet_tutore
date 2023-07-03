@@ -35,17 +35,15 @@ h1{
     border-radius: 5px;
     margin: 4px;
 }
+
+
 .subforum-description *{
     margin-block: 0;
 }
 .zoomable{
-    width: 200px;
-    height: 200px;
-    transition: transform 0.3s;
+    width: 100px;
+    height: 100px;
 }
-.zoomable:hover {
-    transform: scale(2);
- }
 
  .subforum-stats span{
     font-weight: bold;
@@ -331,6 +329,21 @@ flex: 70%;
     color: #fff;
 
 }
+
+.navigate button{
+    padding: 10px;
+    background-color:  #000000;
+    color: #fff;
+    border:solid 1px #52057b;
+    margin-right: 12px;
+}
+
+.navigate button:hover{
+    background-color:#FF0042;
+    color: #fff;
+    box-shadow: 1px 2px 3px #fff;
+}
+
 .navigate a:hover{
     color: #FF0042;
     font-weight: border;
@@ -410,3 +423,5 @@ flex: 70%;
     border:solid 1px #000000;
     
 }
+/*#######################################################################################################*/
+/*#######################################################################################################*/
