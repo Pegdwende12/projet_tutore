@@ -14,10 +14,10 @@
     <div class="container">
         <div class="subforum">
             <div class="navigate">
-                <span><a href="#">My Forum - images</a> >> 
+                <span><a href="{{route('espacepublic')}}">My Forum - images</a> >> 
                     <a href="#">Videos</a> >> 
-                    <a href="#">Resume text</a> >> 
-                    <a href="#">liens </a> 
+                    <a href="{{route('espacepublicResume')}}">Resume text</a> >> 
+                    <a href="{{route('espacepublicLien')}}">liens </a> 
                     <button>
                         <a href="#">Poster une connaissance</a>  
                     </button>

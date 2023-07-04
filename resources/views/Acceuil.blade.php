@@ -49,7 +49,7 @@
                 <p> Bienvenue sur le forum de discussion. Partagez vos connaissances
                      et tirez parti des connaissances de vos camarades</p>
                 <button>
-                    <a href="{{route('espacepublic')}}">Rejoindre la discussion</a>
+                    <a href="#">Rejoindre la discussion</a>
                 </button>
                 
             </section>
