@@ -17,13 +17,13 @@
                 <ul class="nav-list">
                     <span class="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
                     <li class="nav-item">
-                        <a href="#">Acceuil</a>
+                        <a href="{{route('Acceuil')}}">Acceuil</a>
                     </li>
                     <li class="nav-item">
                         <a href="#">inscription</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">Forum</a>
+                        <a href="{{route('espacepublic')}}">Forum</a>
                     </li>
                 </ul>
             </nav>
