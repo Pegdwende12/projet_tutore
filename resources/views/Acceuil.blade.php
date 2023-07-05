@@ -15,7 +15,7 @@
         <div class="container-fluid">
         <!-- Background animtion-->
             <div class="background">
-            <div class="cube"></div>
+            <div class="cube "></div>
             <div class="cube"></div>
             <div class="cube"></div>
             <div class="cube"></div>
