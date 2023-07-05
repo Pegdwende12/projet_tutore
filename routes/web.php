@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Connaissanceimg;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +18,8 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 });*/
 
-Route::get('/espacepublic', function () {
-    return view('espacepublic');
-})->name('espacepublic');
+Route::get('/espacepublic', [Connaissanceimg::class, 'index'])
+    ->name('espacepublic.index');
 
 Route::get('/espacepublicVideo', function () {
     return view('espacepublicVideo');

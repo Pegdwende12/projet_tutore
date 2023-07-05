@@ -26,9 +26,9 @@
                 </span>
             </div>
 
-           
+            @foreach ($connaissances as $connaissance)
             <div class="subforum-title">
-                <h1>Nom de la matiere</h1>
+                <h1>{{$connaissance->matieres->nom_matiere}}</h1>
             </div>
             <div class="subforum-row">
                 <div class="subforum-icon subforum-column center">
@@ -37,25 +37,28 @@
                     <i class="far fa-thumbs-down"></i>
                 </div>
                 <div class="subforum-description subforum-column ">
-                    <h1><a href="">titre de la connaissance: </a></h1>
+                    <h1><a href="">{{ $connaissance->titre_connaiss }} </a></h1>
                     
                     <div >
-                        <img src="https://1.cms.s81c.com/sites/default/files/2021-04-15/ICLH_Diagram_Batch_01_03-DeepNeuralNetwork-WHITEBG.png" alt="image de la connaissance" class="zoomable" onclick="agrandir(event)">
+                        <img src="{{$connaissance->img_connaiss}}" alt="image de la connaissance" class="zoomable" onclick="agrandir(event)">
                     </div>
                     
                 </div>
                 <div class="subforum-stats subforum-column center">
-                    <span id="view-count">12 </span>  vues
-                    <span class="like-count" data-clicked="false"> 1 </span> likes
+                    <span id="view-count">{{ $connaissance->nbr_vues }} </span>  vues
+                    <span class="like-count" data-clicked="false">12 </span> likes
                 </div>
                 <div class="subforum-info subforum-column ">
-                    <b><a href=""> Posté </a></b> par <a href="">Nom de l'etudiant</a>
+                    <b><a href=""> Posté </a></b> par : 
+                    @foreach ($connaissance->etudiants as $etudiant)
+                    <a href="">{{$etudiant->nom_etudiant}} {{$etudiant->prenom_etudiant}}</a>
                     <br>
-                    le<small>date  et l'heure a laquelle il a posté</small>
+                    le<small>{{$etudiant->pivot->date_publication}}</small>
+                    @endforeach
                 </div>
             </div>
 
-            
+            @endforeach
         </div>
 
 

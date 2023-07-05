@@ -33,7 +33,7 @@ class connaissance extends Model
 
     public function etudiants()
     {
-        return $this->belongsToMany(Etudiant::class, 'publication');
+        return $this->belongsToMany(Etudiant::class, 'publication')->withPivot('date_publication');
     }
 
     public function matiere()

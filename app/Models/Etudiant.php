@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Etudiant extends Model
 {
 
-    protected $table= etudiants;
+    protected $table= 'etudiants';
 
     protected $primaryKey='id_etudiant';
 
@@ -22,7 +22,7 @@ class Etudiant extends Model
 
     public function connaissance()
     {
-        return $this->belongsToMany(Connaissance::class, 'publication');
+        return $this->belongsToMany(Connaissance::class, 'publication')->withPivot('date_publication');
     }
        public function appreciation()
        {
