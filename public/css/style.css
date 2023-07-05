@@ -1,0 +1,427 @@
+/*global */
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size:14px;
+    font-family: 'Titillium web',sans-serif;
+    background-color: rgb(0,0,0);
+    color: #FEFEFE;
+
+}
+a{
+    color: #FF0042;
+    font-weight: bolder;
+    text-decoration: none;
+
+}
+h1{
+    font-size:16px;
+    font-weight:bolder;
+
+}
+/*home.html */
+
+.container{
+    margin:20px;
+    padding:20px;
+}
+.subforum{
+    margin-top:20px;
+}
+.subforum-title{
+    background-color: #292B2E;
+    padding:5px;
+    border-radius: 5px;
+    margin: 4px;
+}
+
+
+.subforum-description *{
+    margin-block: 0;
+}
+.zoomable{
+    width: 100px;
+    height: 100px;
+}
+
+ .subforum-stats span{
+    font-weight: bold;
+    margin-right: 15px;
+    font-size: 14px;
+ }
+
+.subforum-row{
+    display:grid;
+    grid-template-columns: 7% 60% 13% 20%;
+}
+.subforum-column{
+    padding: 40px;
+    margin:4px;
+    border-radius: 5px;
+    background-color: #111314;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subforum-icon i{
+    margin-right: 10px;
+    font-size: 22px;
+    cursor:pointer;
+}
+.subforum-devider{
+    display: none;
+    border:0;
+    
+}
+/*for the smartphone*/
+@media screen and (max0width: 460px){
+    .container{
+        margin: 10px;
+        padding: 10px;
+
+    }
+    .subforum-row{
+        display:grid;
+        grid-template-columns: 25% 75% ;
+        grid-template-rows: 65% 35%;
+    } 
+    .subforum-stats{
+        font-size: 12px;
+
+    }
+    .subforum-devider{
+        display: bloc;
+        border:0;
+
+    }
+}
+/*for the tablets*/
+@media screen and (max0width: 460px) and (max-width){
+    .container{
+        margin: 15px;
+        padding: 15px;
+    }
+    .subforum-row{
+        display: grid;
+        grid-template-columns: 10% 60% 10% 20%;
+
+    }
+}
+header{
+    margin-inline: 10px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navigation{
+    background-color:#52057b;
+    padding:10px;
+    width:65%;
+    display:inline-block;
+    border-radius:5px;
+    max-height:80px;
+    margin-right: 10px;
+}
+.nav-list{
+    list-style-type:none;
+    overflow:hidden;
+}
+
+.nav-item a{
+    float:right;
+    display:block;
+    text-align: center;
+    margin-inline: 20px;
+    font-size: 20px;
+    padding: 10px;
+    color: #fff;
+    
+}
+nav-item a:hover{
+    background-color: rgb(0,0,0,0.1);
+}
+.close-icon i{
+    font-size:60px;
+    float: left;
+    cursor:pointer;
+}
+.hide{
+    display:none;
+}
+.bar-icon{
+    font-size: 60px;
+    display:inline-block;
+    margin-right:10px;
+    color: #fff;
+    cursor: pointer;
+}
+@font-face{
+    font-family: aquire;
+    src:url(aquire.otf)
+}
+.brand{
+    font-size:60px;
+    display:inline-block;
+    font-family:aquire;
+}
+/* vabbar for dmartphones*/
+@media screen and (max-width: 460px){
+    .navigation{
+        max-height:auto;
+
+        
+    }
+    .nav-item a{
+        float:left;
+        display:inline;
+        text-align: center;
+        margin-inline: 3px;
+        font-size: 10px;  
+        
+    }
+    nav-item a:hover{
+        background-color: rgb(0,0,0,0.1);
+    }
+    .close-icon i{
+        font-size:30px;
+        
+    }
+    
+    .brand{
+        font-size:20px;
+        
+    }
+}
+/* Search box */
+.search-box{
+    border:solid 1px #52057b;
+    margin-top: 20px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 2px 3px #52075b;
+}
+.search-box select{
+    padding: 10px;
+}
+.search-box input{
+    padding: 10px;
+}
+.search-box button{
+    padding: 10px;
+    background-color: #fff;
+    color: #000000;
+}
+.search-box button:hover{
+    background-color:#000000;
+    color: #fff;
+    box-shadow: 1px 2px 3px #fff;
+}
+
+/* search box for smartphones*/
+@media sreen and (max-width: 460px){
+    .search-box button,.search-box input,.search-box select{
+        min-width: 300px;
+        margin-top: 5px;
+    }
+}
+
+/*Forum info*/
+.forum-info{
+    padding: 20px;
+    background-color: #111314;
+
+}
+.chart{
+    font-size: 20px;
+    font-weight: bold;
+}
+/*Footer*/
+footer{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #52057b;
+    display: block;
+    text-align: center;
+}
+/*#########################################################3*/
+/*posts.html */
+
+.table-head{
+    display: flex;
+}
+
+.table-head div{
+    padding: 5px;
+    margin: 2px;
+    background-color: #2c2c2c;
+    font-weight:bold;
+}
+
+.table-head .status{
+    flex: 5%;
+}
+.table-head .subjects{
+    flex: 70%;
+}
+.table-head .replies{
+    flex: 10%;
+}
+.table-head .last-reply{
+    flex: 10%;
+}
+
+/*table body*/
+.table-row{
+    display: flex;
+}
+
+.table-row .status,.table-row .subjects,.table-row .replies,.table-row .last-reply{
+    padding: 5px;
+    margin: 2px;
+    background-color: #131415;
+}
+
+.table-row .status{
+    flex: 5%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.table-row .subjects{
+flex: 70%;
+}
+
+.table-row .replies{
+    flex: 10%;
+}
+
+.table-row .last-reply{
+    flex:15%;
+}
+
+/*Pagination*/
+.Pagination{
+    padding: 20px;
+    font-size: 15px;
+}
+.Pagination a{
+    color: #fff;
+    margin-inline: 5px;
+    padding: 5px 10px;
+    border: solid 0.5px;
+}
+
+.Pagination a:hover{
+    opacity: 0.5;
+}
+
+.navigate{
+    margin-block: 20px;
+    font-weight: lighter;
+    font-size: 24px;
+}
+.navigate a {
+    color: #fff;
+
+}
+
+.navigate button{
+    padding: 10px;
+    background-color:  #000000;
+    color: #fff;
+    border:solid 1px #52057b;
+    margin-right: 12px;
+}
+
+.navigate button:hover{
+    background-color:#FF0042;
+    color: #fff;
+    box-shadow: 1px 2px 3px #fff;
+}
+
+.navigate a:hover{
+    color: #FF0042;
+    font-weight: border;
+}
+
+.note{
+    background-color:#111314 ;
+    padding: 20px;
+    display: block;
+}
+.note span{
+    font-size: 20px;
+    margin-block: 5px;
+
+}
+
+/*#############################################*/
+/* detail .html*/
+
+.head{
+    display: flex;
+    background-color: #2c2c2c;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.authors{
+    flex: 20%;
+
+}
+.content{
+    flex: 80%;
+}
+.body{
+    display: flex;
+    background-color: #131415;
+    padding: 10px;
+    margin-top: 5px;
+}
+.body .authors .username{
+    font-size: 20px;
+}
+.body .authors .img{
+    max-width: 50px;
+    max-height:80px;
+}
+
+.body .content .comment .button{
+    border: none;
+    padding: 10px;
+    font-weight: bolder;
+    box-shadow: 4px 6px #fff;
+    cursor: pointer;
+    float: right;
+}
+
+/* comment*/
+
+.comment-area{
+    margin-top: 50px;
+    width: 100%;
+}
+.comment-area  textarea{
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    margin-block: 10px;
+}
+.comment-area input{
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.comment-area input:hover{
+    border:solid 1px #000000;
+    
+}
+/*#######################################################################################################*/
+/*#######################################################################################################*/
