@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
 Route::get('/espacepublic', function () {
     return view('espacepublic');
@@ -33,6 +33,6 @@ Route::get('/espacepublicResume', function () {
     return view('espacepublicResume');
 })->name('espacepublicResume');
 
-Route::get('/Acceuil', function () {
+Route::get('/', function () {
     return view('Acceuil');
 })->name('Acceuil');
