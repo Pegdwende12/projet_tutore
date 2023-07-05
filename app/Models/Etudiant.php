@@ -22,7 +22,7 @@ class Etudiant extends Model
 
     public function connaissance()
     {
-        return $this->belongsToMany(Connaissance::class, 'publication')->withPivot('date_publication');
+        return $this->belongsToMany(Connaissance::class, 'publications')->withPivot('date_publication');
     }
        public function appreciation()
        {

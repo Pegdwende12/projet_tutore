@@ -9,7 +9,7 @@ class publication extends Model
 {
 
 
-    protected $table = 'publication';
+    protected $table = 'publications';
     protected $primaryKey = 'id_publication';
     protected $fillable = ['id_etudiant', 'id_connaissance', 'date_publication'];
 
