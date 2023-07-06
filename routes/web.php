@@ -18,8 +18,12 @@ use App\Http\Controllers\Connaissanceimg;
     return view('welcome');
 });*/
 
-Route::get('/espacepublic', [Connaissanceimg::class, 'index'])
+Route::get('/espacepublic/{id}', [Connaissanceimg::class, 'view'])
     ->name('espacepublic');
+
+Route::get('/espacepublic/', [Connaissanceimg::class, 'index'])
+    ->name('espacepublic'); 
+
 
 Route::get('/espacepublicVideo', function () {
     return view('espacepublicVideo');

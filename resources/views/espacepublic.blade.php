@@ -41,11 +41,12 @@
                     
                     <div >
                         <img src="{{$connaissance->img_connaiss}}" alt="image de la connaissance" class="zoomable" onclick="agrandir(event)">
+                        <img src="{{ $connaissance->id}}/view" style="display:none; "alt="">
                     </div>
                     
                 </div>
                 <div class="subforum-stats subforum-column center">
-                    <span id="view-count">{{ $connaissance->nbr_vues }} </span>  vues
+                    <span id="view-count">{{ $connaissance->nbr_vues }}  </span>  vues
                     <span class="like-count" data-clicked="false">12 </span> likes
                 </div>
                 <div class="subforum-info subforum-column ">

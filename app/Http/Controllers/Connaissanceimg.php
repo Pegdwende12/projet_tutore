@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\DB;
 
 class Connaissanceimg extends Controller
 {
-    public function index()
+    public function  view($id)
     {
         // Récupérer toutes les connaissances avec leurs relations
 
@@ -19,9 +19,28 @@ class Connaissanceimg extends Controller
      ->groupBy('id_connaissance')
      ->orderBy('likes','desc')
      ->get();*/
-     $connaissances = Connaissance::with(['etudiants','matiere','publications'])->get();
 
-     return view('espacepublic', compact('connaissances'));
+      // Trouver la connaissance par son id
+      $connaissance= Connaissance::findOrFail($id);
+
+      // Incrémenter le nombre de vues
+      $connaissance->nbr_vues++;
+
+      // Enregistrer le changement dans la base de données
+      $connaissance->save();
+
+      // Rediriger vers la vue qui affiche la connaissance
+      //return redirect('/connaissances/'.$id);
+
+     return view('espacepublic/'.$id);
     }
+
+   
+    public function index(){
+
+        $connaissances = Connaissance::with(['etudiants','matiere','publications'])->get();
+        return view('espacepublic', compact('connaissances'));
+    }
+
      
 }
