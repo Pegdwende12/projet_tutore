@@ -20,9 +20,14 @@ class Etudiant extends Model
 
     }
 
+    public function publications()
+    {
+        return $this->hasMany(Publication::class,'id_etudiant');
+    }
+
     public function connaissance()
     {
-        return $this->belongsToMany(Connaissance::class, 'publications')->withPivot('date_publication');
+        return $this->belongsToMany(Connaissance::class, 'publications','id_etudiant','id_connaissance')->withPivot('date_publication');
     }
        public function appreciation()
        {

@@ -19,7 +19,7 @@ use App\Http\Controllers\Connaissanceimg;
 });*/
 
 Route::get('/espacepublic', [Connaissanceimg::class, 'index'])
-    ->name('espacepublic.index');
+    ->name('espacepublic');
 
 Route::get('/espacepublicVideo', function () {
     return view('espacepublicVideo');

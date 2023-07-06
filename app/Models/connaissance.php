@@ -31,9 +31,14 @@ class connaissance extends Model
         return $this->belongsTo(Niveau::class, 'id_niveau');
     }
 
+    public function publications()
+    {
+        return $this->hasMany(Publication::class,'id_connaissance');
+    }
+
     public function etudiants()
     {
-        return $this->belongsToMany(Etudiant::class, 'publications')->withPivot('date_publication');
+        return $this->belongsToMany(Etudiant::class, 'publications','id_connaissance','id_etudiant')->withPivot('date_publication');
     }
 
     public function matiere()

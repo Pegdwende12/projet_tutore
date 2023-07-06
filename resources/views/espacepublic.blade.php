@@ -28,7 +28,7 @@
 
             @foreach ($connaissances as $connaissance)
             <div class="subforum-title">
-                <h1>{{$connaissance->matieres->nom_matiere}}</h1>
+                <h1>{{$connaissance->matiere->nom_matiere}}</h1>
             </div>
             <div class="subforum-row">
                 <div class="subforum-icon subforum-column center">
