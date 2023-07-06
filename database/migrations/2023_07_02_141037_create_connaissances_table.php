@@ -17,8 +17,8 @@ return new class extends Migration
             $table->String('titre_connaiss');
             $table->String('lien_connaiss');
             $table->String('img_connaiss');
-            $table->String('video_connaissance')->nullable();
-            $table->String('titre_connaissance')->nullable();
+            $table->String('video_connaiss')->nullable();
+            $table->String('resume_connaiss')->nullable();
             $table->Integer('nbr_vues');
             $table->unsignedBigInteger('id_niveau');
             $table->unsignedBigInteger('id_etudiant');

@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Connaissanceimg;
+use App\Http\Controllers\Connaissancevideo;
+use App\Http\Controllers\Connaissanceresume;
+use App\Http\Controllers\Connaissancelien;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,24 +21,18 @@ use App\Http\Controllers\Connaissanceimg;
     return view('welcome');
 });*/
 
-Route::get('/espacepublic/{id}', [Connaissanceimg::class, 'view'])
-    ->name('espacepublic');
-
-Route::get('/espacepublic/', [Connaissanceimg::class, 'index'])
+Route::get('/espacepublic', [Connaissanceimg::class, 'index'])
     ->name('espacepublic'); 
 
 
-Route::get('/espacepublicVideo', function () {
-    return view('espacepublicVideo');
-})->name('espacepublicVideo');
+Route::get('/espacepublicVideo', [Connaissancevideo::class,'index']
+    )->name('espacepublicVideo');
 
-Route::get('/espacepublicLien', function () {
-    return view('espacepublicLien');
-})->name('espacepublicLien');
+Route::get('/espacepublicLien', [Connaissancelien::class,'index']
+    )->name('espacepublicLien');
 
-Route::get('/espacepublicResume', function () {
-    return view('espacepublicResume');
-})->name('espacepublicResume');
+Route::get('/espacepublicResume', [Connaissanceresume::class, 'index']
+    )->name('espacepublicResume');
 
 Route::get('/', function () {
     return view('Acceuil');

@@ -18,7 +18,7 @@ return new class extends Migration
             $table->integer('like')->default(0);
             $table->integer('unlike')->default(0);
             $table->timestamps();
-            $table->boolean('is_positive');
+            $table->boolean('is_positive')->default(false);
             $table->foreign('id_connaissance')->references('id_connaissance')->on('connaissances');
             $table->foreign('id_etudiant')->references('id_etudiant')->on('etudiants');
         });

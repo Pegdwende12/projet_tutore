@@ -24,8 +24,11 @@
                 </span>
             </div>
 
+
+            @if (isset($connaissances))
+            @foreach ($connaissances as $connaissance)
             <div class="subforum-title">
-                <h1>Nom de la matiere</h1>
+                <h1>{{$connaissance->matiere->nom_matiere}}</h1>
             </div>
             <div class="subforum-row">
                 <div class="subforum-icon subforum-column center">
@@ -34,24 +37,29 @@
                     <i class="far fa-thumbs-down"></i>
                 </div>
                 <div class="subforum-description subforum-column ">
-                    <h1><a href="">titre de la connaissance: </a></h1>
+                    <h1><a href="">{{ $connaissance->titre_connaiss }} </a></h1>
                     <p> 
-                        <a href="">Lien vers la connaissance</a>
+                        <a href="">{{ $connaissance->lien_connaiss }}</a>
                     </p>
                     
                 </div>
                 <div class="subforum-stats subforum-column center">
-                    <span id="view-count">12 </span>  vues
+                    <span id="view-count">{{ $connaissance->nbr_vues }} </span>  vues
                     <span id="like-count"> 14 </span> likes
                 </div>
                 <div class="subforum-info subforum-column ">
-                    <b><a href=""> Posté </a></b> par <a href="">Nom de l'etudiant</a>
+                    <b><a href=""> Posté </a></b> par 
+                    @foreach ($connaissance->etudiants as $etudiant)
+                    <a href="">{{$etudiant->nom_etudiant}} {{$etudiant->prenom_etudiant}}t</a>
                     <br>
-                    le<small>date  et l'heure a laquelle il a posté</small>
+                    le<small>{{$etudiant->pivot->date_publication}}</small>
+                    @endforeach
                 </div>
             </div>
 
-            
+            @endforeach
+           
+           @endif
         </div>
 
 
