@@ -38,7 +38,7 @@
                 </div>
                 <div class="subforum-description subforum-column ">
                     <h1><a href="">{{ $connaissance->titre_connaiss }} </a></h1>
-                    <p> {{$connaissance->lien_connaiss}}</p>
+                    <p> {{$connaissance->resume_connaiss}}</p>
                     
                 </div>
                 <div class="subforum-stats subforum-column center">
