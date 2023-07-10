@@ -18,8 +18,8 @@ return new class extends Migration
             $table->integer('numero_tel')->nullable();
             $table->String('email_etudiant',90);
             $table->string('password',255);
-           //$table->unsignedBigInteger('id_niveau');
-            //$table->foreign('id_niveau')->references('id_niveau')->on('niveaux');
+            $table->unsignedBigInteger('id_niveau');
+            $table->foreign('id_niveau')->references('id_niveau')->on('niveaux');
             $table->timestamps();
         });
     }

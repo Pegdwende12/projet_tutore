@@ -36,7 +36,7 @@
                         <a href="{{route('espacepublic')}}">Forum</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{route('inscription')}}">Inscription</a>
+                        <a href="#">Inscription</a>
                     </li>
                 </ul>
             </nav>

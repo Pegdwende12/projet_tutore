@@ -7,7 +7,7 @@ use App\Http\Controllers\Connaissanceresume;
 use App\Http\Controllers\Connaissancelien;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\InscriptionController;
-
+use App\Http\Controllers\ConnaisanceController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -39,6 +39,12 @@ Route::get('/espacepublicResume', [Connaissanceresume::class, 'index']
 Route::get('/', function () {
     return view('Acceuil');
 })->name('Acceuil');
+
+Route::get('/connaisance', [ConnaisanceController::class, 'create'])->name('connaisance');
+Route::post('/connaisance', [ConnaisanceController::class, 'store']);
+/*Route::get('/connaissance', function () {
+    return view('connaissance');
+})->name('connaissance');*/
 
 Route::get('/inscription', [InscriptionController::class, 'showForm'])->name('inscription');
 Route::post('/inscription', [InscriptionController::class, 'register'])->name('inscription');

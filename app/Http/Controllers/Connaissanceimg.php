@@ -38,9 +38,10 @@ class Connaissanceimg extends Controller
 
    
     public function index(){
-        if (!auth()->check()) {
+       
+       /* if (!auth()->check()) {
             return redirect('inscription');
-        }
+        }*/
 
         $connaissances = Connaissance::with(['etudiants','matiere','publications'])->whereNotNull('img_connaiss')->get();
         return view('espacepublic', compact('connaissances'));

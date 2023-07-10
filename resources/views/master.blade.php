@@ -20,7 +20,7 @@
                         <a href="{{route('Acceuil')}}">Acceuil</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{route('inscription')}}">inscription</a>
+                        <a href="#">inscription</a>
                     </li>
                     <li class="nav-item">
                         <a href="{{route('espacepublic')}}">Forum</a>
@@ -55,8 +55,8 @@
             My Forum - Stats &nbsp;<i class="fa fa-bar-chart"></i>
         </div>
         <div>
-            <span><u>5,369 </u>Posts in <u>1,21</u>0 Topics by <u>45,214</u> Users</span>
-            <span>Latest Post: <b><a href="#">Random Post </a></b> on 15 Dec 2021 by <a href="">RandomUser</a></span>
+            <!--<span><u>5,369 </u>Posts in <u>1,21</u>0 Topics by <u>45,214</u> Users</span>-->
+            <!--<span>Latest Post: <b><a href="#">Random Post </a></b> on 15 Dec 2021 by <a href="">RandomUser</a></span>-->
         </div>
     </div>
 
