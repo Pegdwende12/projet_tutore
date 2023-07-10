@@ -15,10 +15,11 @@ return new class extends Migration
             $table->id('id_etudiant');
             $table->String('nom_etudiant',30);
             $table->String('prenom_etudiant',80);
-            $table->integer('numero_tel');
+            $table->integer('numero_tel')->nullable();
             $table->String('email_etudiant',90);
-            $table->unsignedBigInteger('id_niveau');
-            $table->foreign('id_niveau')->references('id_niveau')->on('niveaux');
+            $table->string('password',255);
+           //$table->unsignedBigInteger('id_niveau');
+            //$table->foreign('id_niveau')->references('id_niveau')->on('niveaux');
             $table->timestamps();
         });
     }

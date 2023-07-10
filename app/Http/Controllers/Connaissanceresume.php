@@ -9,7 +9,7 @@ class Connaissanceresume extends Controller
     //
     public function index(){
 
-        $connaissances = Connaissance::with(['etudiants','matiere','publications'])->get();
+        $connaissances = Connaissance::with(['etudiants','matiere','publications'])->whereNotNull('resume_connaiss')->get();
         return view('espacepublicResume', compact('connaissances'));
     }
 }

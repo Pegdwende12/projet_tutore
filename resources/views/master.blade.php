@@ -20,7 +20,7 @@
                         <a href="{{route('Acceuil')}}">Acceuil</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">inscription</a>
+                        <a href="{{route('inscription')}}">inscription</a>
                     </li>
                     <li class="nav-item">
                         <a href="{{route('espacepublic')}}">Forum</a>

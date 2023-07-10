@@ -9,7 +9,7 @@ class Connaissancevideo extends Controller
     //
     public function index(){
 
-        $connaissances = Connaissance::with(['etudiants','matiere','publications'])->get();
+        $connaissances = Connaissance::with(['etudiants','matiere','publications'])->whereNotNull('video_connaiss')->get();
         return view('espacepublicVideo', compact('connaissances'));
     }
 }

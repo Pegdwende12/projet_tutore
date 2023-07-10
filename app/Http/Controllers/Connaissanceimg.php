@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\connaissance;
 use Illuminate\Support\Facades\DB;
+use  App\Models\Etudiant;
 
 
 class Connaissanceimg extends Controller
@@ -37,8 +38,11 @@ class Connaissanceimg extends Controller
 
    
     public function index(){
+        if (!auth()->check()) {
+            return redirect('inscription');
+        }
 
-        $connaissances = Connaissance::with(['etudiants','matiere','publications'])->get();
+        $connaissances = Connaissance::with(['etudiants','matiere','publications'])->whereNotNull('img_connaiss')->get();
         return view('espacepublic', compact('connaissances'));
     }
 

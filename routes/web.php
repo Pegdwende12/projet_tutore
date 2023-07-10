@@ -5,6 +5,8 @@ use App\Http\Controllers\Connaissanceimg;
 use App\Http\Controllers\Connaissancevideo;
 use App\Http\Controllers\Connaissanceresume;
 use App\Http\Controllers\Connaissancelien;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\InscriptionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,3 +39,8 @@ Route::get('/espacepublicResume', [Connaissanceresume::class, 'index']
 Route::get('/', function () {
     return view('Acceuil');
 })->name('Acceuil');
+
+Route::get('/inscription', [InscriptionController::class, 'showForm'])->name('inscription');
+Route::post('/inscription', [InscriptionController::class, 'register'])->name('inscription');
+Route::get('/login',[AuthController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [AuthController::class, 'login']);
