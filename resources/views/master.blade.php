@@ -34,13 +34,14 @@
         <!--search box-->
         <div class="search-box">
             <div>
-                <select name=" " id="">
-                    <option value="Everything">Everything</option>
-                    <option value="titles">Titles</option>
-                    <option value="descriptions">Descriptions</option>
+            <form action="{{route('espacepublic')}}" method="GET">
+                <select name="type " id="">
+                    <option value="nom_etudiant">nom etudiant</option>
+                    <option value="nom_matiere">Nom matiere</option>
                     <input type="text" name="q" id="" placholder="search ...">
                     <button><i class="fa fa-search"></i></button>
                 </select>
+            </form>
             </div>
             
         </div>
